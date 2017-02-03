@@ -1,21 +1,19 @@
 #include <iostream>
-#include <cctype>
 
 using namespace std;
 
 int main() {
-    char c1, c2, c3, c4, c5;
+    double dividend  = 0.0;
+    double divisor = 0.0;
+    cout << "Enter the dividend: ";
+    cin >> dividend;
+    cout << "Enter the divisor: ";
+    cin >> divisor;
 
-    cout << "Enter a 5-letter word: ";
-    cin >> c1 >> c2 >> c3 >> c4 >> c5;
+    int wholePart = dividend / divisor;
+    double remainder = dividend - (wholePart * divisor);
 
-    c1 = toupper(c1);
-    c2 = tolower(c2);
-    c3 = tolower(c3);
-    c4 = tolower(c4);
-    c5 = tolower(c5);
-    
-    cout << "Your word is " << c1 << c2 << c3 << c4 << c5 << endl;
+    cout << dividend << " % " << divisor << " == " << remainder << endl;
 
     return 0;
 }

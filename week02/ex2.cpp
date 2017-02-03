@@ -3,17 +3,12 @@
 using namespace std;
 
 int main() {
-    double dividend  = 0.0;
-    double divisor = 0.0;
-    cout << "Enter the dividend: ";
-    cin >> dividend;
-    cout << "Enter the divisor: ";
-    cin >> divisor;
+    char character;
+    cout << "Enter a character: ";
+    cin >> character;
 
-    int wholePart = dividend / divisor;
-    double remainder = dividend - (wholePart * divisor);
-
-    cout << dividend << " % " << divisor << " == " << remainder << endl;
+    cout << "'" << character << "' in decimal is "
+        << static_cast<int>(character) << endl;
 
     return 0;
 }
